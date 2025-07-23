@@ -1,4 +1,4 @@
-const BASE = "https://leaderboardbackend.netlify.app/.netlify/functions";
+const BASE = "https://leaderboardbackend.netlify.app/.netlify/functions/app";
 export const fetchUsers = async (page = 1, limit = 10) => {
   const res = await fetch(`${BASE}/users?page=${page}&limit=${limit}`);
   if (!res.ok) {
